@@ -1,0 +1,67 @@
+Create project by conda enviourment
+cd D:\DataSCIENCE\Projects
+conda create --name project1
+conda activate project1
+conda install jupyter
+conda install ipykernel
+conda install numpy
+conda env export > environment.yml
+conda install -c conda-forge r-base r-irkernel
+conda install -c conda-forge r-package-ggplot
+jupyter notebook
+"Ctrl" + "C"      type terminal
+conda deactivate
+
+
+mannage and open existing enviourments
+conda env list
+conda activate project1
+cd D:\DataSCIENCE\Projects
+jupyter notebook
+"Ctrl" + "C"      type terminal
+conda deactivate
+
+Eviourment delete 
+conda env remove --name my_env
+
+Exporting enviourment
+conda create --name env -f environment.yml (only python package will be installed)
+conda activate project1
+
+{can not manifest
+ channels:
+  - conda-forge}
+
+
+
+
+"""Note that not all R packages may be available in the 
+conda-forge channel, so you may need 
+to use other package repositories or 
+install packages directly from within 
+R using the install.packages() function."""
+conda install --file requirements.txt
+
+
+
+
+
+
+
+
+To exit Jupyter Notebook, you can do the following:
+
+Save any open notebooks by clicking "File" -> "Save and Checkpoint" in the Jupyter Notebook interface.
+
+Close any running kernels by clicking "Kernel" -> "Shutdown All Kernels" in the Jupyter Notebook interface.
+
+Navigate to the terminal or command prompt where you launched Jupyter Notebook.
+
+Press "Ctrl" + "C" to interrupt the Jupyter Notebook server.
+
+Type "y" and press "Enter" to confirm that you want to shut down the Jupyter Notebook server.
+
+The terminal or command prompt should now display a message that the server has been shut down.
+
+
+
